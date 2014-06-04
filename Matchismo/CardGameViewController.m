@@ -35,7 +35,6 @@
 
 - (IBAction)touchCardButton:(UIButton *)sender
 {
-    
     if ([sender.currentTitle length]) {
         [sender setBackgroundImage:[UIImage imageNamed:@"cardback"]
                           forState:UIControlStateNormal];
@@ -43,6 +42,7 @@
     } else {
         PlayingCard *card = [self.deck drawRandomCard];
         if (!card) {
+            // the deck is empty so get a new one!
             self.deck = nil;
             card = [self.deck drawRandomCard];
         }
