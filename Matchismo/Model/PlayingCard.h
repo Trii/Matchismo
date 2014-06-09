@@ -15,6 +15,5 @@
 
 + (NSArray *)validSuits;
 + (NSUInteger)maxRank;
-- (BOOL)isRedCard;
-- (BOOL)isBlackCard;
+
 @end
